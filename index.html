@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>| Gaming Website Page |</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./images/logo.png" id="logo">
+            <class class="nav">
+                <ul id="menulist">
+                    <li><a href="javascript:void()">Game Controller</a></li>
+                    <li><a href="javascript:void()">VR Accessories</a></li>
+                    <li><a href="javascript:void()">Media Remotes</a></li>
+                    <li><a href="javascript:void()">Others</a></li>
+                </ul>
+            </class>
+            <img src="./images/menu.png" id="menu" onclick="toggleClick()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br> DualShock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatible/Generic)</p>
+                <h4>$32.50</h4>
+                <button id="btn-buy">Buy Now <img src="./images/arrow.png" alt="arrow"></button>
+            </div>
+            <div class="col-2">
+                <img src="./images/controller.png" id="controller">
+                <div class="color-box"></div>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <img src="./images/fb.jpg">
+            <img src="./images/ig.png">
+            <img src="./images/tw.png">
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        var menuList = document.getElementById("menulist");
+        function toggleClick() {
+            if (menuList.className === "hide") {
+                menuList.className = "show";
+            }
+            else {
+                menuList.className = "hide"
+            }
+        }
+    </script>
+</body>
+
+</html>
